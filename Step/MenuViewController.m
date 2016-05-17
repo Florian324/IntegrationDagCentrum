@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 
 @interface MenuViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *List;
 
 @end
 
@@ -19,6 +20,7 @@
     [self.navigationController setNavigationBarHidden:YES];
     // Do any additional setup after loading the view.
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
