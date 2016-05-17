@@ -38,7 +38,9 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string></string>
+		<string>Bariol_Regular.otf</string>
+		<string>Bariol-Bold.otf</string>
+		<string>Bariol-Light.otf</string>
 	</array>
 </dict>
 </plist>
