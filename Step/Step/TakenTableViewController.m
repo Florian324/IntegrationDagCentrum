@@ -15,13 +15,18 @@
 @implementation TakenTableViewController
 
 - (void)viewDidLoad {
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSForegroundColorAttributeName: [UIColor colorWithRed:(44/255) green:(53/255) blue:(73/255) alpha:1],
+                                                           NSFontAttributeName: [UIFont fontWithName:@"Bariol-Bold" size:20.0f]
+                                                           }];
+
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {

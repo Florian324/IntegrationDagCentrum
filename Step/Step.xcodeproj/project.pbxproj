@@ -15,13 +15,16 @@
 		6F9B17831CEB1F0A00CDEE7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B17811CEB1F0A00CDEE7C /* LaunchScreen.storyboard */; };
 		6F9B178E1CEB1F0A00CDEE7C /* StepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B178D1CEB1F0A00CDEE7C /* StepTests.m */; };
 		6F9B17991CEB1F0A00CDEE7C /* StepUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B17981CEB1F0A00CDEE7C /* StepUITests.m */; };
-		6FC0847E1CEB4177003E0523 /* kamer.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC0847A1CEB4177003E0523 /* kamer.png */; };
-		6FC0847F1CEB4177003E0523 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC0847B1CEB4177003E0523 /* list.png */; };
-		6FC084801CEB4177003E0523 /* scan.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC0847C1CEB4177003E0523 /* scan.png */; };
-		6FC084811CEB4177003E0523 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC0847D1CEB4177003E0523 /* settings.png */; };
+		DD5D4D631CEB2217003FA151 /* kamer.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5D4D5F1CEB2217003FA151 /* kamer.png */; };
+		DD5D4D641CEB2217003FA151 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5D4D601CEB2217003FA151 /* list.png */; };
+		DD5D4D651CEB2217003FA151 /* scan.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5D4D611CEB2217003FA151 /* scan.png */; };
+		DD5D4D661CEB2217003FA151 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5D4D621CEB2217003FA151 /* settings.png */; };
 		DD5D4D6A1CEB372C003FA151 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5D4D691CEB372C003FA151 /* MenuViewController.m */; };
 		DD5D4D6D1CEB3A89003FA151 /* TakenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5D4D6C1CEB3A89003FA151 /* TakenTableViewController.m */; };
-		DD5D4D701CEB3E47003FA151 /* Bariol in Resources */ = {isa = PBXBuildFile; fileRef = DD5D4D6F1CEB3E47003FA151 /* Bariol */; };
+		DD5D4D7D1CEB4809003FA151 /* Bariol_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD5D4D7A1CEB47E1003FA151 /* Bariol_Regular.ttf */; };
+		DD5D4D7E1CEB480F003FA151 /* Bariol_Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD5D4D791CEB47E1003FA151 /* Bariol_Regular.otf */; };
+		DD5D4D7F1CEB4817003FA151 /* Bariol-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD5D4D7B1CEB47E1003FA151 /* Bariol-Bold.otf */; };
+		DD5D4D801CEB4819003FA151 /* Bariol-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DD5D4D7C1CEB47E1003FA151 /* Bariol-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,15 +60,18 @@
 		6F9B17941CEB1F0A00CDEE7C /* StepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9B17981CEB1F0A00CDEE7C /* StepUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StepUITests.m; sourceTree = "<group>"; };
 		6F9B179A1CEB1F0A00CDEE7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FC0847A1CEB4177003E0523 /* kamer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamer.png; sourceTree = "<group>"; };
-		6FC0847B1CEB4177003E0523 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
-		6FC0847C1CEB4177003E0523 /* scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan.png; sourceTree = "<group>"; };
-		6FC0847D1CEB4177003E0523 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		DD5D4D5F1CEB2217003FA151 /* kamer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kamer.png; sourceTree = "<group>"; };
+		DD5D4D601CEB2217003FA151 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		DD5D4D611CEB2217003FA151 /* scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan.png; sourceTree = "<group>"; };
+		DD5D4D621CEB2217003FA151 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		DD5D4D681CEB372C003FA151 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = ../MenuViewController.h; sourceTree = "<group>"; };
 		DD5D4D691CEB372C003FA151 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = ../MenuViewController.m; sourceTree = "<group>"; };
 		DD5D4D6B1CEB3A89003FA151 /* TakenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TakenTableViewController.h; sourceTree = "<group>"; };
 		DD5D4D6C1CEB3A89003FA151 /* TakenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TakenTableViewController.m; sourceTree = "<group>"; };
-		DD5D4D6F1CEB3E47003FA151 /* Bariol */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Bariol; sourceTree = "<group>"; };
+		DD5D4D791CEB47E1003FA151 /* Bariol_Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Regular.otf; sourceTree = "<group>"; };
+		DD5D4D7A1CEB47E1003FA151 /* Bariol_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bariol_Regular.ttf; sourceTree = "<group>"; };
+		DD5D4D7B1CEB47E1003FA151 /* Bariol-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bariol-Bold.otf"; sourceTree = "<group>"; };
+		DD5D4D7C1CEB47E1003FA151 /* Bariol-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bariol-Light.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,10 +168,10 @@
 		DD5D4D671CEB222E003FA151 /* icons */ = {
 			isa = PBXGroup;
 			children = (
-				6FC0847A1CEB4177003E0523 /* kamer.png */,
-				6FC0847B1CEB4177003E0523 /* list.png */,
-				6FC0847C1CEB4177003E0523 /* scan.png */,
-				6FC0847D1CEB4177003E0523 /* settings.png */,
+				DD5D4D5F1CEB2217003FA151 /* kamer.png */,
+				DD5D4D601CEB2217003FA151 /* list.png */,
+				DD5D4D611CEB2217003FA151 /* scan.png */,
+				DD5D4D621CEB2217003FA151 /* settings.png */,
 			);
 			name = icons;
 			sourceTree = "<group>";
@@ -173,10 +179,21 @@
 		DD5D4D6E1CEB3C0C003FA151 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DD5D4D6F1CEB3E47003FA151 /* Bariol */,
+				DD5D4D811CEB4AA4003FA151 /* Fonts */,
 				DD5D4D671CEB222E003FA151 /* icons */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		DD5D4D811CEB4AA4003FA151 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DD5D4D791CEB47E1003FA151 /* Bariol_Regular.otf */,
+				DD5D4D7A1CEB47E1003FA151 /* Bariol_Regular.ttf */,
+				DD5D4D7B1CEB47E1003FA151 /* Bariol-Bold.otf */,
+				DD5D4D7C1CEB47E1003FA151 /* Bariol-Light.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,14 +299,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FC084811CEB4177003E0523 /* settings.png in Resources */,
+				DD5D4D7D1CEB4809003FA151 /* Bariol_Regular.ttf in Resources */,
+				DD5D4D631CEB2217003FA151 /* kamer.png in Resources */,
+				DD5D4D661CEB2217003FA151 /* settings.png in Resources */,
+				DD5D4D641CEB2217003FA151 /* list.png in Resources */,
+				DD5D4D651CEB2217003FA151 /* scan.png in Resources */,
+				DD5D4D7F1CEB4817003FA151 /* Bariol-Bold.otf in Resources */,
 				6F9B17831CEB1F0A00CDEE7C /* LaunchScreen.storyboard in Resources */,
+				DD5D4D7E1CEB480F003FA151 /* Bariol_Regular.otf in Resources */,
 				6F9B17801CEB1F0A00CDEE7C /* Assets.xcassets in Resources */,
-				6FC0847E1CEB4177003E0523 /* kamer.png in Resources */,
-				6FC084801CEB4177003E0523 /* scan.png in Resources */,
 				6F9B177B1CEB1F0A00CDEE7C /* Main.storyboard in Resources */,
-				DD5D4D701CEB3E47003FA151 /* Bariol in Resources */,
-				6FC0847F1CEB4177003E0523 /* list.png in Resources */,
+				DD5D4D801CEB4819003FA151 /* Bariol-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
