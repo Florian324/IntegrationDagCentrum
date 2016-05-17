@@ -9,24 +9,38 @@
 #import "TakenTableViewController.h"
 
 @interface TakenTableViewController ()
-
+@property (nonatomic,strong) UIColor *textColor;
 @end
 
 @implementation TakenTableViewController
 
 - (void)viewDidLoad {
+    _textColor = [UIColor colorWithRed:(44/255) green:(53/255) blue:(73/255) alpha:1];
     [[UINavigationBar appearance] setTitleTextAttributes:@{
-                                                           NSForegroundColorAttributeName: [UIColor colorWithRed:(44/255) green:(53/255) blue:(73/255) alpha:1],
+                                                           NSForegroundColorAttributeName: _textColor,
                                                            NSFontAttributeName: [UIFont fontWithName:@"Bariol-Bold" size:20.0f]
                                                            }];
-
     [super viewDidLoad];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    //[self.navigationItem.backBarButtonItem setTitle:@" "];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     //self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSForegroundColorAttributeName: _textColor,
+                                                           NSFontAttributeName: [UIFont fontWithName:@"Bariol-Bold" size:20.0f]
+                                                           }];
+    self.navigationController.navigationBar.tintColor =  _textColor;
+    // back wegdoen -> is al gelukt in storybord
+    /*self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@" "
+                                     style:UIBarButtonItemStyleBordered
+                                    target:nil
+                                    action:nil];*/
 }
 
 - (void)didReceiveMemoryWarning {

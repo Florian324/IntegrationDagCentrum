@@ -93,7 +93,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nRX-65-r4J" secondAttribute="bottom" constant="8" symbolic="YES" id="yjP-RA-8VK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="GtC-3p-ogc"/>
+                    <navigationItem key="navigationItem" id="GtC-3p-ogc">
+                        <barButtonItem key="backBarButtonItem" title=" " id="GFc-7O-8xj"/>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -108,9 +110,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="kI4-Iq-lm4">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="RRm-lw-sfr">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="136" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RRm-lw-sfr" id="nfc-O7-JAg">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -123,7 +130,17 @@
                             <outlet property="delegate" destination="56R-A3-606" id="QAx-zq-fWJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="TAKEN" id="NjD-Gc-a3g"/>
+                    <navigationItem key="navigationItem" title="TAKEN" id="Bxj-3Y-t4O">
+                        <barButtonItem key="backBarButtonItem" title=" " id="vaf-PE-xkw"/>
+                        <barButtonItem key="rightBarButtonItem" image="plus.png" style="plain" id="v8n-cW-YOn">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TEk-l9-aNs">
+                                <rect key="frame" x="284" y="12" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" image="plus.png"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fg7-kt-XIT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,4 +166,7 @@
             <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus.png" width="217" height="221"/>
+    </resources>
 </document>
