@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,43 +20,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSi-hC-xss">
-                                <rect key="frame" x="163" y="20" width="150" height="267"/>
-                                <color key="backgroundColor" red="0.93725490196078431" green="0.52941176470588236" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRX-65-r4J">
-                                <rect key="frame" x="7" y="293" width="150" height="267"/>
-                                <color key="backgroundColor" red="0.93725490196078431" green="0.52941176470588236" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK5-hN-Jhk">
-                                <rect key="frame" x="163" y="293" width="150" height="267"/>
-                                <color key="backgroundColor" red="0.27058823529999998" green="0.69019607839999997" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="redraw" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iE1-eS-bWf">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iE1-eS-bWf">
                                 <rect key="frame" x="7" y="20" width="150" height="267"/>
                                 <color key="backgroundColor" red="0.27058823529411763" green="0.69019607843137254" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="267" id="QPU-hK-bYz"/>
-                                    <constraint firstAttribute="width" constant="150" id="m0L-5C-iAJ"/>
-                                </constraints>
-                                <state key="normal" title="Lijst" backgroundImage="list.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" image="list"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
@@ -65,35 +34,104 @@
                                     <segue destination="56R-A3-606" kind="show" id="eVK-gR-iJ3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSi-hC-xss">
+                                <rect key="frame" x="163" y="20" width="150" height="267"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.52941176470588236" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="scan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRX-65-r4J">
+                                <rect key="frame" x="7" y="293" width="150" height="267"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.52941176470588236" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="kamer">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CK5-hN-Jhk">
+                                <rect key="frame" x="163" y="293" width="150" height="267"/>
+                                <color key="backgroundColor" red="0.27058823529999998" green="0.69019607839999997" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8r1-Lm-Qcp">
+                                <rect key="frame" x="217" y="216" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instellingen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrx-u7-NqG">
+                                <rect key="frame" x="192" y="492" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kamers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbI-Cq-7BD">
+                                <rect key="frame" x="51" y="492" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOb-mi-oWq">
+                                <rect key="frame" x="61" y="216" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="A6E-UI-wxi"/>
+                                    <constraint firstAttribute="height" constant="21" id="EXR-hM-y5F"/>
+                                    <constraint firstAttribute="width" secondItem="oOb-mi-oWq" secondAttribute="height" multiplier="2:1" id="FSC-aA-mZh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CSi-hC-xss" firstAttribute="trailing" secondItem="CK5-hN-Jhk" secondAttribute="trailing" id="5CT-vK-tOF"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CK5-hN-Jhk" secondAttribute="bottom" constant="8" symbolic="YES" id="9g4-H9-IGy"/>
-                            <constraint firstItem="nRX-65-r4J" firstAttribute="width" secondItem="CK5-hN-Jhk" secondAttribute="width" id="E5t-uk-nG7"/>
-                            <constraint firstItem="iE1-eS-bWf" firstAttribute="leading" secondItem="nRX-65-r4J" secondAttribute="leading" id="Fqm-KM-gdu"/>
-                            <constraint firstItem="iE1-eS-bWf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="GAK-fj-gcr"/>
-                            <constraint firstItem="nRX-65-r4J" firstAttribute="height" secondItem="CK5-hN-Jhk" secondAttribute="height" id="GVZ-l8-gmU"/>
-                            <constraint firstItem="CSi-hC-xss" firstAttribute="leading" secondItem="CK5-hN-Jhk" secondAttribute="leading" id="I9S-ga-uix"/>
-                            <constraint firstItem="CSi-hC-xss" firstAttribute="leading" secondItem="iE1-eS-bWf" secondAttribute="trailing" constant="6" id="IsV-Be-Nxk"/>
-                            <constraint firstItem="nRX-65-r4J" firstAttribute="width" secondItem="iE1-eS-bWf" secondAttribute="width" id="KHo-E3-Asb"/>
-                            <constraint firstItem="iE1-eS-bWf" firstAttribute="trailing" secondItem="nRX-65-r4J" secondAttribute="trailing" id="Nbc-Dt-NfZ"/>
-                            <constraint firstItem="CK5-hN-Jhk" firstAttribute="firstBaseline" secondItem="nRX-65-r4J" secondAttribute="firstBaseline" id="TKW-Y6-yAt"/>
-                            <constraint firstItem="iE1-eS-bWf" firstAttribute="bottom" secondItem="CSi-hC-xss" secondAttribute="bottom" id="W2F-lE-egJ"/>
-                            <constraint firstItem="CK5-hN-Jhk" firstAttribute="height" secondItem="CSi-hC-xss" secondAttribute="height" id="aiV-1R-fJg"/>
-                            <constraint firstItem="iE1-eS-bWf" firstAttribute="height" secondItem="CSi-hC-xss" secondAttribute="height" id="cug-bf-wJb"/>
-                            <constraint firstItem="iE1-eS-bWf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dY1-Pp-qL0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CSi-hC-xss" secondAttribute="trailing" constant="-9" id="ff7-By-zwQ"/>
-                            <constraint firstItem="iE1-eS-bWf" firstAttribute="width" secondItem="CSi-hC-xss" secondAttribute="width" id="gmu-rI-Nec"/>
-                            <constraint firstItem="nRX-65-r4J" firstAttribute="top" secondItem="iE1-eS-bWf" secondAttribute="bottom" constant="6" id="i4c-eu-cRk"/>
-                            <constraint firstItem="iE1-eS-bWf" firstAttribute="baseline" secondItem="CSi-hC-xss" secondAttribute="baseline" id="jdt-SI-ex7"/>
-                            <constraint firstItem="CK5-hN-Jhk" firstAttribute="width" secondItem="CSi-hC-xss" secondAttribute="width" id="l74-00-iUM"/>
-                            <constraint firstItem="CK5-hN-Jhk" firstAttribute="baseline" secondItem="nRX-65-r4J" secondAttribute="baseline" id="nMz-Ig-P8n"/>
-                            <constraint firstItem="nRX-65-r4J" firstAttribute="top" secondItem="CK5-hN-Jhk" secondAttribute="top" id="nqx-3O-Cym"/>
-                            <constraint firstItem="iE1-eS-bWf" firstAttribute="top" secondItem="CSi-hC-xss" secondAttribute="top" id="qgB-OI-IWb"/>
-                            <constraint firstItem="CSi-hC-xss" firstAttribute="firstBaseline" secondItem="iE1-eS-bWf" secondAttribute="firstBaseline" id="vBZ-Uy-fD6"/>
-                            <constraint firstItem="nRX-65-r4J" firstAttribute="height" secondItem="iE1-eS-bWf" secondAttribute="height" id="xVg-ay-G7t"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nRX-65-r4J" secondAttribute="bottom" constant="8" symbolic="YES" id="yjP-RA-8VK"/>
+                            <constraint firstItem="sbI-Cq-7BD" firstAttribute="centerX" secondItem="nRX-65-r4J" secondAttribute="centerX" id="0a0-GJ-Csc"/>
+                            <constraint firstItem="CK5-hN-Jhk" firstAttribute="top" secondItem="nRX-65-r4J" secondAttribute="top" id="255-nx-DGn"/>
+                            <constraint firstItem="sbI-Cq-7BD" firstAttribute="baseline" secondItem="Jrx-u7-NqG" secondAttribute="baseline" id="2rw-TP-c7G"/>
+                            <constraint firstItem="iE1-eS-bWf" firstAttribute="firstBaseline" secondItem="CSi-hC-xss" secondAttribute="firstBaseline" id="5c6-kC-aCr"/>
+                            <constraint firstItem="nRX-65-r4J" firstAttribute="width" secondItem="CK5-hN-Jhk" secondAttribute="width" id="67r-J1-L9t"/>
+                            <constraint firstItem="CK5-hN-Jhk" firstAttribute="leading" secondItem="sbI-Cq-7BD" secondAttribute="trailing" constant="49" id="BUQ-KJ-FCL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sbI-Cq-7BD" secondAttribute="bottom" constant="55" id="CET-I1-N9F"/>
+                            <constraint firstItem="CK5-hN-Jhk" firstAttribute="trailing" secondItem="CSi-hC-xss" secondAttribute="trailing" id="J0n-uE-eUE"/>
+                            <constraint firstItem="8r1-Lm-Qcp" firstAttribute="centerX" secondItem="CSi-hC-xss" secondAttribute="centerX" id="Jhi-pm-cSb"/>
+                            <constraint firstItem="CK5-hN-Jhk" firstAttribute="height" secondItem="CSi-hC-xss" secondAttribute="height" id="KMO-f6-3G1"/>
+                            <constraint firstItem="CK5-hN-Jhk" firstAttribute="baseline" secondItem="nRX-65-r4J" secondAttribute="baseline" id="LQu-d4-Ft3"/>
+                            <constraint firstItem="Jrx-u7-NqG" firstAttribute="centerX" secondItem="CK5-hN-Jhk" secondAttribute="centerX" id="N7V-kf-gso"/>
+                            <constraint firstItem="CSi-hC-xss" firstAttribute="leading" secondItem="CK5-hN-Jhk" secondAttribute="leading" id="Q4g-nZ-Zrz"/>
+                            <constraint firstItem="CK5-hN-Jhk" firstAttribute="width" secondItem="CSi-hC-xss" secondAttribute="width" id="Qad-Nj-RGR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nRX-65-r4J" secondAttribute="bottom" constant="8" symbolic="YES" id="XQt-eP-z9S"/>
+                            <constraint firstItem="iE1-eS-bWf" firstAttribute="baseline" secondItem="CSi-hC-xss" secondAttribute="baseline" id="ddF-bl-x1u"/>
+                            <constraint firstItem="iE1-eS-bWf" firstAttribute="leading" secondItem="nRX-65-r4J" secondAttribute="leading" id="dfc-De-SBZ"/>
+                            <constraint firstItem="iE1-eS-bWf" firstAttribute="trailing" secondItem="nRX-65-r4J" secondAttribute="trailing" id="f8z-FY-1WA"/>
+                            <constraint firstItem="Jrx-u7-NqG" firstAttribute="leading" secondItem="nRX-65-r4J" secondAttribute="trailing" constant="35" id="f93-D5-tkN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CSi-hC-xss" secondAttribute="trailing" constant="-9" id="fki-97-k1i"/>
+                            <constraint firstItem="8r1-Lm-Qcp" firstAttribute="leading" secondItem="iE1-eS-bWf" secondAttribute="trailing" constant="60" id="i3Q-LU-im0"/>
+                            <constraint firstItem="iE1-eS-bWf" firstAttribute="top" secondItem="CSi-hC-xss" secondAttribute="top" id="jCN-84-ar6"/>
+                            <constraint firstItem="8r1-Lm-Qcp" firstAttribute="centerX" secondItem="CSi-hC-xss" secondAttribute="centerX" id="o46-nw-Ata"/>
+                            <constraint firstItem="iE1-eS-bWf" firstAttribute="width" secondItem="CSi-hC-xss" secondAttribute="width" id="pQn-bY-pSC"/>
+                            <constraint firstItem="iE1-eS-bWf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="qT9-Z2-o8r"/>
+                            <constraint firstItem="nRX-65-r4J" firstAttribute="height" secondItem="iE1-eS-bWf" secondAttribute="height" id="tDd-js-fSL"/>
+                            <constraint firstItem="iE1-eS-bWf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="xIX-hS-MA3"/>
+                            <constraint firstItem="nRX-65-r4J" firstAttribute="top" secondItem="iE1-eS-bWf" secondAttribute="bottom" constant="6" id="yXz-B1-APP"/>
+                            <constraint firstItem="CSi-hC-xss" firstAttribute="leading" secondItem="iE1-eS-bWf" secondAttribute="trailing" constant="6" id="yy3-cy-ska"/>
+                            <constraint firstItem="CK5-hN-Jhk" firstAttribute="firstBaseline" secondItem="nRX-65-r4J" secondAttribute="firstBaseline" id="z80-w6-aJb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GtC-3p-ogc"/>
@@ -156,6 +194,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="list.png" width="50" height="50"/>
+        <image name="kamer" width="100" height="100"/>
+        <image name="list" width="100" height="100"/>
+        <image name="scan" width="100" height="100"/>
+        <image name="settings" width="100" height="100"/>
     </resources>
 </document>
